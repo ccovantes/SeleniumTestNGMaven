@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-20T19:23:02 CST" name="Suite" finished-at="2024-03-20T19:24:34 CST" duration-ms="91993">
+    <groups>
+      <group name="regression">
+        <method signature="Test01.test01()[pri:0, instance:test.Test01@74ecacc3]" name="test01" class="test.Test01"/>
+        <method signature="Test02.test01()[pri:0, instance:test.Test02@5e7c141d]" name="test01" class="test.Test02"/>
+        <method signature="Test03.test01()[pri:0, instance:test.Test03@97d0c06]" name="test01" class="test.Test03"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="Test02.test01()[pri:0, instance:test.Test02@5e7c141d]" name="test01" class="test.Test02"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="Test01.test01()[pri:0, instance:test.Test01@74ecacc3]" name="test01" class="test.Test01"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2024-03-20T19:23:02 CST" name="Test" finished-at="2024-03-20T19:24:34 CST" duration-ms="91993">
+      <class name="test.Test01">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:test.Test01@74ecacc3]" started-at="2024-03-20T19:23:03 CST" name="setUpTest" finished-at="2024-03-20T19:23:25 CST" duration-ms="22632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="test01()[pri:0, instance:test.Test01@74ecacc3]" started-at="2024-03-20T19:23:43 CST" name="test01" finished-at="2024-03-20T19:23:56 CST" duration-ms="13444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Test01@74ecacc3]" started-at="2024-03-20T19:24:33 CST" name="tearDownTest" finished-at="2024-03-20T19:24:33 CST" duration-ms="636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- test.Test01 -->
+      <class name="test.Test03">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:test.Test03@97d0c06]" started-at="2024-03-20T19:23:36 CST" name="setUpTest" finished-at="2024-03-20T19:23:43 CST" duration-ms="6441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="test01()[pri:0, instance:test.Test03@97d0c06]" started-at="2024-03-20T19:24:00 CST" name="test01" finished-at="2024-03-20T19:24:14 CST" duration-ms="13923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Test03@97d0c06]" started-at="2024-03-20T19:24:34 CST" name="tearDownTest" finished-at="2024-03-20T19:24:34 CST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- test.Test03 -->
+      <class name="test.Test02">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:test.Test02@5e7c141d]" started-at="2024-03-20T19:23:25 CST" name="setUpTest" finished-at="2024-03-20T19:23:36 CST" duration-ms="11016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="test01()[pri:0, instance:test.Test02@5e7c141d]" started-at="2024-03-20T19:24:14 CST" name="test01" finished-at="2024-03-20T19:24:33 CST" duration-ms="18383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Test02@5e7c141d]" started-at="2024-03-20T19:24:33 CST" name="tearDownTest" finished-at="2024-03-20T19:24:34 CST" duration-ms="1224" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aba1d1e518202895031ddb115cd09693, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.58 (6b4b19e9dfbb..., userDataDir: C:\Users\IRMATI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64896}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64896/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aba1d1e518202895031ddb115cd09693]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aba1d1e518202895031ddb115cd09693, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.58 (6b4b19e9dfbb..., userDataDir: C:\Users\IRMATI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64896}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64896/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aba1d1e518202895031ddb115cd09693
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:406)
+at pages.BasePage.closeBrowser(BasePage.java:41)
+at test.Test02.tearDownTest(Test02.java:53)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+at org.testng.TestRunner.afterRun(TestRunner.java:933)
+at org.testng.TestRunner.run(TestRunner.java:624)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- test.Test02 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
